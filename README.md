@@ -4,12 +4,17 @@ A React-based web application to explore SpaceX launches. Fetch real-time data f
 
 ---
 
+## Live URL
+- https://react-assignment-psi-gold.vercel.app/
+
+---
+
 ##  Features
 
 - View a list of SpaceX launches with key details.
 - Filter launches by year or mission name.
 - View mission details in a modal with rocket information.
-- External links to Wikipedia and webcast (if available).
+- External links to Wikipedia and webcast .
 - Responsive UI built with Tailwind CSS.
 - Favorite launches stored in localStorage.
 
