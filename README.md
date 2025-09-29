@@ -54,6 +54,20 @@ docker run -p 8080:80 atmosly-spacex
 npm run test
 ```
 
+## Specific Test case running 
+
+``` bash
+npm run test:launches (Rendering and filtering the list)
+```
+
+``` bash
+npm run test:details (Detail view rendering)
+```
+
+``` bash
+npm run test:favorites (Favorites toggle and persistence)
+```
+
 ##  Developer
 
 Developed by Yash Gupta with ☕ and ❤️.
