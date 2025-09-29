@@ -27,7 +27,7 @@ A React-based web application to explore SpaceX launches. Fetch real-time data f
 - **Styling:** Tailwind CSS , Shadcn-UI
 - **State Management:** Context API  
 - **Testing:** Vitest + React Testing Library  
-- **API:** SpaceX Public API (v4)  
+- **API:** SpaceX Public API, Axios  
 - **Containerize:** Docker
 
 ---
