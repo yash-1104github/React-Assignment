@@ -34,7 +34,7 @@ test('favorites toggle and persistence', async () => {
 
   let favButton: HTMLButtonElement | null = null
   try {
-    favButton = withinCard.getByRole('button', { name: /add favorite|favorite|remove favorite/i })
+    favButton = withinCard.getByRole('button', { name: /add favorite|favorite|remove favorite/i }) as HTMLButtonElement
   } catch (err) {
     const allBtns = Array.from(card.querySelectorAll('button'))
     favButton = allBtns.find((b) =>
