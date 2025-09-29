@@ -56,16 +56,19 @@ npm run test
 
 ## Specific Test case running 
 
+- (Rendering and filtering the list)
 ``` bash
-npm run test:launches (Rendering and filtering the list)
+npm run test:launches 
 ```
 
+- (Detail view rendering)
 ``` bash
-npm run test:details (Detail view rendering)
+npm run test:details 
 ```
 
+- (Favorites toggle and persistence)
 ``` bash
-npm run test:favorites (Favorites toggle and persistence)
+npm run test:favorites 
 ```
 
 ##  Developer
