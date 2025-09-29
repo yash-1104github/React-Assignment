@@ -34,15 +34,14 @@ A React-based web application to explore SpaceX launches. Fetch real-time data f
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-
 npm install
-
 npm run dev
 ```
 
 ##  Running Tests
-
+```bash
 npm run test
+```
 
 ##  Developer
 
