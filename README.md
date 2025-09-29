@@ -43,6 +43,12 @@ npm install
 npm run dev
 ```
 
+### 2. Running with Docker 
+```bash
+docker build -t atmosly-spacex .
+docker run -p 8080:80 atmosly-spacex
+```
+
 ##  Running Tests
 ```bash
 npm run test
