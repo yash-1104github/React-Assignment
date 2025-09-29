@@ -66,23 +66,7 @@ export const setupLocalStorageMock = () => {
 };
 
 export const setupFetchMock = () => {
-  vi.spyOn(global, "fetch").mockImplementation((url: string) => {
-    if (url.includes("launches")) {
-      return Promise.resolve({
-        ok: true,
-        json: async () => launchesMock,
-      } as any);
-    }
-    if (url.includes("rockets")) {
-      return Promise.resolve({
-        ok: true,
-        json: async () => ({ name: "Falcon 1" }),
-      } as any);
-    }
-    return Promise.reject(new Error(`Unknown endpoint: ${url}`));
-  });
-
-  // Mock axios.get for launches and rockets
+  
   vi.spyOn(axios, "get").mockImplementation((url: string) => {
     if (url.includes("launches")) {
       return Promise.resolve({ data: launchesMock });
