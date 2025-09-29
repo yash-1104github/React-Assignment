@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import useDebounce from "../hooks/useDebounce";
 import { useLaunches } from "../context/LaunchesContext";
 import { Input } from "../components/ui/input";
@@ -12,6 +12,7 @@ import {
 import { Switch } from "../components/ui/switch";
 import { Label } from "../components/ui/label";
 import { IoClose } from "react-icons/io5";
+
 
 export default function Filters() {
   const {
@@ -30,6 +31,11 @@ export default function Filters() {
   console.log(favorites)
 
   const debouncedSearch = useDebounce(search, 300);
+
+  useEffect(() => {
+  setSearch(debouncedSearch);
+}, [debouncedSearch, setSearch]);
+
 
   const years = useMemo(() => {
     const set = new Set<string>();
